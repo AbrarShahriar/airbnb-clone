@@ -1,0 +1,15 @@
+.home {
+
+}
+
+.home__section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 20px;
+}
+@media (max-width:800px) {
+    .home__section {
+        flex-wrap: wrap;
+    }
+}

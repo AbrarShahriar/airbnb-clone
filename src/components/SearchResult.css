@@ -1,0 +1,111 @@
+.searchResult {
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+    /* outline: 2px solid red; */
+}
+.searchResult:hover {
+    opacity: 0.8;
+}
+@media (max-width:600px) {
+    .searchResult {
+        flex-direction: column;
+    }
+}
+
+.searchResult > img {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+@media (max-width:800px) {
+    .searchResult > img  {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.searchResult__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.searchResult__heart {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.searchResult__heart__phone {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.searchResult__infoTop__location {
+    width: 150px;
+}
+
+.searchResult__infoTop {
+    width: 100%;
+    position: relative;
+    /* outline: 2px solid yellow; */
+}
+
+.searchResult__infoTop > h3 {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.searchResult__infoTop > p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: gray;
+}
+
+.searchResult__infoBottom {
+    display: flex;
+    justify-content: space-between;
+    /* outline: 2px solid red; */
+    margin-top: 20px;
+    width: 20px;
+}
+
+.searchResult__stars {
+    display: flex;
+    align-items: center;
+}
+
+.searchResult__star {
+    color: red;
+}
+
+.searchResult__price {
+    position: absolute;
+    bottom: 20px;
+    /* outline: 2px solid blue; */
+    right: 30px;
+}
+
+.searchResult__price > p {
+    text-align: right;
+}
+
+@media (max-width:600px) {
+    .searchResult__price > h2 {
+        font-size: 1rem;
+    }
+
+    .searchResult__price > p {
+        font-size: 0.8rem;
+    }
+}
+

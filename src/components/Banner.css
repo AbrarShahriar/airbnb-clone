@@ -1,0 +1,51 @@
+.banner {
+    height: 50vh;
+    position: relative;
+    background: url('https://www.hpanorama.com/content/uploads/2016/11/DE-LUXE-TOP.jpg') no-repeat;
+    background-position: center center;
+}
+
+.banner__info {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 15vh 50px 40px 50px;
+    width: 300px;
+}
+@media (max-width:800px) {
+    .banner__info {
+        padding: 3vh 25px 20px 25px;
+        width: 175px;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+.banner__info > button {
+    background-color: #ff7779;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.banner__info > button:hover {
+    background-color: white;
+    color: #ff7779;
+}
+
+.banner__info > h5 {
+    margin-top: 10px;
+}
+
+.banner__search {
+    display: flex;
+    flex-direction: column;
+    background: white;
+
+}
+
+.banner__searchButton {
+    background-color: white !important;
+    font-weight: 900 !important;
+    text-transform: capitalize !important;
+    color: #ff7779 !important; 
+}
